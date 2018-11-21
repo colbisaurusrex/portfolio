@@ -30,7 +30,7 @@ module.exports = {
       resolve: 'gatsby-plugin-web-font-loader',
       options: {
         google: {
-          families: ['Codystar', 'Roboto']
+          families: ['Codystar', 'Roboto', 'Playfair Display\:400,900', 'Vollkorn\:400,600i,900']
         }
       }
     }

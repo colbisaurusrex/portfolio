@@ -1,19 +1,29 @@
 import React from 'react'
-import { createGlobalStyle } from 'styled-components'
+import styled from 'styled-components'
 import Layout from '../components/layout.js'
+import About from '../components/About.jsx'
+import Title from '../components/Title.jsx'
+import Navigation from '../components/Navigation.jsx'
 
-const GlobalStyle = createGlobalStyle`
-  h1 {
-    font-family: 'Abril Fatface';
-    font-size: 80px;
-    line-height: 30px;
-  }
+const Container = styled.div`
+  width: 100%;
+  height:100vh;
+  display: flex;
+  flex-direction: row;
 `
 
+const Divider = styled.div`
+  margin: 50px 0px 50px 0px;
+  border-right: 1px solid;
+`
 
 const IndexPage = () => (
   <Layout>
-    <div></div>
+    <Container>
+      <Title />
+      <Divider />
+      <About />
+    </Container>
   </Layout>
 )
 
